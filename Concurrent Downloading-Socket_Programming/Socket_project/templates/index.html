@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Concurrent File Downloader</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Concurrent File Downloader</h1>
+      <p>Enter the name of a file on the server and download it.</p>
+
+      <form id="downloadForm">
+        <div class="field">
+          <input id="filename" name="filename" placeholder="Enter filename (e.g. hello.txt)" required />
+          <button id="downloadBtn">Download</button>
+        </div>
+        <div class="meta">
+          <div class="stage"><strong>Client:</strong> <span id="clientStatus">Idle</span></div>
+          <div class="stage"><strong>Server:</strong> <span id="serverStatus">Idle</span></div>
+        </div>
+        <div class="progressWrap" aria-hidden="true">
+          <div id="progressBar" class="progressBar"><div id="progressFill" class="progressFill"></div></div>
+          <div id="progressText" class="progressText">0%</div>
+        </div>
+      </form>
+
+      <div id="status" class="muted"></div>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+:root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8}
+*{box-sizing:border-box;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+body{margin:0;background:linear-gradient(180deg,var(--bg),#071029);color:#e6eef8;min-height:100vh;display:flex;align-items:center;justify-content:center}
+.container{width:640px;max-width:94%;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);padding:32px;border-radius:14px;box-shadow:0 12px 38px rgba(2,6,23,0.65)}
+h1{margin:0 0 8px 0;font-size:22px}
+p{margin:0 0 18px 0;color:var(--muted)}
+form{display:block}
+.field{display:flex;gap:12px}
+input{flex:1;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+button{padding:10px 16px;border-radius:10px;border:0;background:linear-gradient(90deg,var(--accent),#3b82f6);color:#022;cursor:pointer;font-weight:700}
+#status{margin-top:14px;color:var(--muted);font-size:14px}
+
+.spinner{display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,0.12);border-top-color:var(--accent);border-radius:50%;animation:spin 1s linear infinite;margin-right:8px}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.meta{display:flex;gap:18px;margin-top:12px}
+.stage{color:var(--muted);font-size:13px}
+.muted{color:var(--muted);margin-top:10px}
+
+.progressWrap{margin-top:12px}
+.progressBar{width:100%;height:12px;background:rgba(255,255,255,0.03);border-radius:10px;overflow:hidden}
+.progressFill{width:0%;height:100%;background:linear-gradient(90deg,var(--accent),#3b82f6);transition:width 160ms linear}
+.progressText{margin-top:6px;font-size:13px;color:var(--muted)}
+
+.success{color:#86efac}
+.error{color:#ffb4b4}

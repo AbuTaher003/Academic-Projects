@@ -1,0 +1,14 @@
+This is a larger sample file created for testing.
+
+Below is repeated content to increase size for streaming demonstration.
+
+Line: This is a sample line for the big file.\n
+Line: This is a sample line for the big file.\n
+Line: This is a sample line for the big file.\n
+Line: This is a sample line for the big file.\n
+Line: This is a sample line for the big file.\n
+Line: This is a sample line for the big file.\n
+Line: This is a sample line for the big file.\n
+Line: This is a sample line for the big file.\n
+Line: This is a sample line for the big file.\n
+Line: This is a sample line for the big file.\n
